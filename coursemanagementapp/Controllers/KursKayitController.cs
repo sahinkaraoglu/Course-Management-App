@@ -45,6 +45,37 @@ namespace coursemanagementapp.Controllers
             return RedirectToAction("Index");
         }
 
+        [HttpGet]
+        public async Task<ActionResult> Delete(int? id)
+        {
+            if (id == null)
+            {
+                return NotFound();
+            }
+
+            var coursekayit = await _context.KursKayitlari.FindAsync(id);
+            if (coursekayit == null)
+            {
+                return NotFound();
+            }
+            return View(coursekayit);
+        }
+
+        [HttpPost]
+        public async Task<IActionResult> Delete([FromForm] int id)
+        {
+            var coursekayit = await _context.KursKayitlari.FindAsync(id);
+            if (coursekayit == null)
+            {
+                return NotFound();
+            }
+            _context.KursKayitlari.Remove(coursekayit);
+            await _context.SaveChangesAsync();
+            return RedirectToAction("Index");
+        }
+
+
+
 
 
     }

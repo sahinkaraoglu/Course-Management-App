@@ -92,7 +92,34 @@ namespace coursemanagementapp.Controllers
 
 
 
+        [HttpGet]
+        public async Task<ActionResult> Delete(int? id)
+        {
+            if (id == null)
+            {
+                return NotFound();
+            }
 
+            var ogretmen = await _context.Ogretmenler.FindAsync(id);
+            if (ogretmen == null)
+            {
+                return NotFound();
+            }
+            return View(ogretmen);
+        }
+
+        [HttpPost]
+        public async Task<IActionResult> Delete([FromForm] int id)
+        {
+            var ogretmen = await _context.Ogretmenler.FindAsync(id);
+            if (ogretmen == null)
+            {
+                return NotFound();
+            }
+            _context.Ogretmenler.Remove(ogretmen);
+            await _context.SaveChangesAsync();
+            return RedirectToAction("Index");
+        }
 
 
 
