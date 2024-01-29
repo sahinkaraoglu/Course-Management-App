@@ -4,16 +4,15 @@
     </h2>
     <hr>
     <a asp-action="Create" class="btn btn-primary">Öğretmen Ekle</a>
-
-    <table class="table table-border">
+   <p>
+    <table class="table table-bordered">
         <thead>
             <tr>
-                <th style="width: 150px;">@Html.DisplayNameFor(m => m.OgretmenId)
-                <th>@Html.DisplayNameFor(m => m.Ad)
-                <th>@Html.DisplayNameFor(m => m.Soyad)
-                <th>@Html.DisplayNameFor(m => m.BaslamaTarihi)
-                <th style="width: 150px;"></th>
-                <th></th>
+                <th style="width: 150px;">@Html.DisplayNameFor(m => m.OgretmenId)</th>
+                <th>@Html.DisplayNameFor(m => m.Ad)</th>
+                <th>@Html.DisplayNameFor(m => m.Soyad)</th>
+                <th>@Html.DisplayNameFor(m => m.BaslamaTarihi)</th>
+                <th style="width: 150px;">İşlem</th>
             </tr>
         </thead>
         <tbody>
