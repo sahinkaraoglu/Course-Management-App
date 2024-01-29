@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "aO5UWk8p/PPX1ZVu8Rdg5JXq9QktCp9IJclbibytNSgOu9xDE0bs/NN7sWrksmUQrDxOB77gw3tWowZbPIPUhQ==",
+  "dgSpecHash": "8mcHpXhRNeVGIQpTHfQXSUJoUffTPYykUDAPT082z48dML8tsblkBCism5nVIdmVy8PeW3+xJyuqcVvyZemEJg==",
   "success": true,
-  "projectFilePath": "C:\\Users\\karao\\Desktop\\proje\\Course-Management-App\\coursemanagementapp\\coursemanagementapp.csproj",
+  "projectFilePath": "C:\\Users\\karao\\Desktop\\github\\Course-Management-App\\coursemanagementapp\\coursemanagementapp.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\karao\\.nuget\\packages\\humanizer.core\\2.14.1\\humanizer.core.2.14.1.nupkg.sha512",
     "C:\\Users\\karao\\.nuget\\packages\\microsoft.data.sqlite.core\\7.0.0\\microsoft.data.sqlite.core.7.0.0.nupkg.sha512",

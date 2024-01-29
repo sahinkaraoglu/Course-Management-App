@@ -21,8 +21,25 @@ namespace coursemanagementapp.Controllers
                         .KursKayitlari
                         .Include(x => x.Ogrenci)
                         .Include(x => x.Kurs)
+                        .ThenInclude(x => x.Ogretmen)
                         .ToListAsync();
-            return View(KursKayitlari);
+
+            var kurslist = KursKayitlari.Select(x => new KursKayitViewModel
+            {
+                KayitId = x.KayitId,
+                OgrenciId = x.OgrenciId,
+                KursId = x.KursId,
+                Kurs = x.Kurs,
+                KayitTarihi = x.KayitTarihi,
+                Ogrenci = x.Ogrenci,
+                Ogretmen = new OgretmenViewModel(){
+                    AdSoyad = _context.Ogretmenler.FirstOrDefault(y => y.OgretmenId == x.Kurs.OgretmenId)?.AdSoyad
+                }
+
+            });
+
+            return View(kurslist);
+
         }
 
 
@@ -44,37 +61,6 @@ namespace coursemanagementapp.Controllers
 
             return RedirectToAction("Index");
         }
-
-        [HttpGet]
-        public async Task<ActionResult> Delete(int? id)
-        {
-            if (id == null)
-            {
-                return NotFound();
-            }
-
-            var coursekayit = await _context.KursKayitlari.FindAsync(id);
-            if (coursekayit == null)
-            {
-                return NotFound();
-            }
-            return View(coursekayit);
-        }
-
-        [HttpPost]
-        public async Task<IActionResult> Delete([FromForm] int id)
-        {
-            var coursekayit = await _context.KursKayitlari.FindAsync(id);
-            if (coursekayit == null)
-            {
-                return NotFound();
-            }
-            _context.KursKayitlari.Remove(coursekayit);
-            await _context.SaveChangesAsync();
-            return RedirectToAction("Index");
-        }
-
-
 
 
 
