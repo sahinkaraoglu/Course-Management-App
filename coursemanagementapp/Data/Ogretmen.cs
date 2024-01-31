@@ -8,7 +8,8 @@ namespace coursemanagementapp.Data
         public int OgretmenId { get; set; }
         public string? Ad { get; set; }
         public string? Soyad { get; set; }
-  
+
+        [Display(Name = "Öğretmen Ad Soyad")]
         public string? AdSoyad
         {
             get

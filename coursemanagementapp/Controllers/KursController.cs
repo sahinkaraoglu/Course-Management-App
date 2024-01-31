@@ -35,7 +35,7 @@ namespace coursemanagementapp.Controllers
                 _context.Kurslar.Add(new Kurs()
                 {
                     KursId = model.KursId,
-                    Baslik = model.Baslik,
+                    Ders = model.Ders,
                     OgretmenId = model.OgretmenId
                 });
                 await _context.SaveChangesAsync();
@@ -62,7 +62,7 @@ namespace coursemanagementapp.Controllers
             .Select(k => new KursViewModel
             {
                 KursId = k.KursId,
-                Baslik = k.Baslik,
+                Ders = k.Ders,
                 OgretmenId = k.OgretmenId,
                 KursKayitlari = k.KursKayitlari
 
@@ -96,7 +96,7 @@ namespace coursemanagementapp.Controllers
                     _context.Update(new Kurs()
                     {
                         KursId = model.KursId,
-                        Baslik = model.Baslik,
+                        Ders = model.Ders,
                         OgretmenId = model.OgretmenId
                     });
                     await _context.SaveChangesAsync();

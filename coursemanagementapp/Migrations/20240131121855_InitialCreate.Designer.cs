@@ -11,8 +11,8 @@ using coursemanagementapp.Data;
 namespace coursemanagementapp.Migrations
 {
     [DbContext(typeof(DataContext))]
-    [Migration("20240130165531_FirsMigration")]
-    partial class FirsMigration
+    [Migration("20240131121855_InitialCreate")]
+    partial class InitialCreate
     {
         /// <inheritdoc />
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
@@ -26,7 +26,7 @@ namespace coursemanagementapp.Migrations
                         .ValueGeneratedOnAdd()
                         .HasColumnType("INTEGER");
 
-                    b.Property<string>("Baslik")
+                    b.Property<string>("Ders")
                         .HasColumnType("TEXT");
 
                     b.Property<int>("OgretmenId")

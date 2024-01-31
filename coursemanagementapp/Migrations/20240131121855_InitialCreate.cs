@@ -6,7 +6,7 @@ using Microsoft.EntityFrameworkCore.Migrations;
 namespace coursemanagementapp.Migrations
 {
     /// <inheritdoc />
-    public partial class FirsMigration : Migration
+    public partial class InitialCreate : Migration
     {
         /// <inheritdoc />
         protected override void Up(MigrationBuilder migrationBuilder)
@@ -50,7 +50,7 @@ namespace coursemanagementapp.Migrations
                 {
                     KursId = table.Column<int>(type: "INTEGER", nullable: false)
                         .Annotation("Sqlite:Autoincrement", true),
-                    Baslik = table.Column<string>(type: "TEXT", nullable: true),
+                    Ders = table.Column<string>(type: "TEXT", nullable: true),
                     OgretmenId = table.Column<int>(type: "INTEGER", nullable: false)
                 },
                 constraints: table =>

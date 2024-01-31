@@ -23,7 +23,7 @@ namespace coursemanagementapp.Migrations
                         .ValueGeneratedOnAdd()
                         .HasColumnType("INTEGER");
 
-                    b.Property<string>("Baslik")
+                    b.Property<string>("Ders")
                         .HasColumnType("TEXT");
 
                     b.Property<int>("OgretmenId")

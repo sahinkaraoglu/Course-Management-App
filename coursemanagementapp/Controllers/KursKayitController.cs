@@ -33,7 +33,7 @@ namespace coursemanagementapp.Controllers
         public async Task<IActionResult> Create()
         {
             ViewBag.Ogrenciler = new SelectList(await _context.Ogrenciler.ToListAsync(), "OgrenciId", "AdSoyad");
-            ViewBag.Kurslar = new SelectList(await _context.Kurslar.ToListAsync(), "KursId", "Baslik");
+            ViewBag.Kurslar = new SelectList(await _context.Kurslar.ToListAsync(), "KursId", "Ders");
             ViewBag.Ogretmenler = new SelectList(await _context.Ogretmenler.ToListAsync(), "OgretmenId", "AdSoyad");
 
             return View();
