@@ -10,6 +10,8 @@ namespace coursemanagementapp.Data
       [StringLength(50)]
       public string? Ders { get; set; }
       public int OgretmenId { get; set; }
+      public int OgrenciId { get; set; }
+
       public ICollection<KursKayit> KursKayitlari { get; set; } = new List<KursKayit> { };
    }
 }
