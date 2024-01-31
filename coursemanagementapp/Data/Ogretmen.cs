@@ -22,6 +22,8 @@ namespace coursemanagementapp.Data
 
         [DataType(DataType.Date)]
         [DisplayFormat(DataFormatString = "{0:dd-MM-yyyy}", ApplyFormatInEditMode = false)]
+        
+        [Display(Name = "Başlama Tarihi")]
         public DateTime BaslamaTarihi { get; set; }
         public ICollection<Kurs> Kurslar { get; set; } = new List<Kurs>();
         public ICollection<KursKayit> KursKayitlari { get; set; } = new List<KursKayit> { };
