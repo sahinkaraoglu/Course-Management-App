@@ -48,7 +48,11 @@ namespace coursemanagementapp.Controllers
             await _context.SaveChangesAsync();
 
             return RedirectToAction("Index");
+
         }
+
+
+
 
         [HttpGet]
         public async Task<ActionResult> Delete(int? id)

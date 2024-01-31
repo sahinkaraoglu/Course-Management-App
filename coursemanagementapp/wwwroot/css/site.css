@@ -20,3 +20,45 @@ html {
 body {
   margin-bottom: 60px;
 }
+
+
+/*fdfdsfdsf*/
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+#banner {
+  width: 980px;
+  height: 600px;
+  margin: 0 auto;
+  display: flex;
+  overflow: hidden;
+  position: relative;
+
+  & img {
+      display: block;
+      object-fit: cover;
+      animation: slide 6s cubic-bezier(.86, 0, .07, 1) infinite alternate;
+  }
+}
+#banner-heading{
+  position: absolute;
+  inset: 30% 20%;
+  & h1{
+      color: #fff;
+      font-size: 80px;
+  }
+
+}
+
+@keyframes slide {
+  0% {
+      transform: translateX(0);
+  }
+
+  100% {
+      transform: translateX(-100%);
+  }
+
+}

@@ -5,6 +5,7 @@ namespace coursemanagementapp.Data
    public class KursViewModel
    {
       public int KursId { get; set; }
+      public int KayitId { get; set; }
 
       [Required,]
       [StringLength(50)]

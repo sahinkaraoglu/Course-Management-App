@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "Y8nTtPDrG4ZRjIIdo13OV7fFkLk6oMOwlDK2Zh9qYDE=",
+  "Hash": "J3BxTWo521ogWUEBCZ03hVl+MrQkRwzstGYh3tahsg0=",
   "Source": "coursemanagementapp",
   "BasePath": "_content/coursemanagementapp",
   "Mode": "Default",
@@ -93,12 +93,12 @@
       "OriginalItemSpec": "wwwroot\\favicon.ico"
     },
     {
-      "Identity": "C:\\Users\\karao\\Desktop\\newgithub\\Course-Management-App\\coursemanagementapp\\wwwroot\\images\\peakpx.jpg",
+      "Identity": "C:\\Users\\karao\\Desktop\\newgithub\\Course-Management-App\\coursemanagementapp\\wwwroot\\images\\slide1.jpg",
       "SourceId": "coursemanagementapp",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\karao\\Desktop\\newgithub\\Course-Management-App\\coursemanagementapp\\wwwroot\\",
       "BasePath": "_content/coursemanagementapp",
-      "RelativePath": "images/peakpx.jpg",
+      "RelativePath": "images/slide1.jpg",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
@@ -109,15 +109,15 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\images\\peakpx.jpg"
+      "OriginalItemSpec": "wwwroot\\images\\slide1.jpg"
     },
     {
-      "Identity": "C:\\Users\\karao\\Desktop\\newgithub\\Course-Management-App\\coursemanagementapp\\wwwroot\\images\\pexels.jpg",
+      "Identity": "C:\\Users\\karao\\Desktop\\newgithub\\Course-Management-App\\coursemanagementapp\\wwwroot\\images\\slide2.jpg",
       "SourceId": "coursemanagementapp",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\karao\\Desktop\\newgithub\\Course-Management-App\\coursemanagementapp\\wwwroot\\",
       "BasePath": "_content/coursemanagementapp",
-      "RelativePath": "images/pexels.jpg",
+      "RelativePath": "images/slide2.jpg",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
@@ -128,7 +128,7 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\images\\pexels.jpg"
+      "OriginalItemSpec": "wwwroot\\images\\slide2.jpg"
     },
     {
       "Identity": "C:\\Users\\karao\\Desktop\\newgithub\\Course-Management-App\\coursemanagementapp\\wwwroot\\js\\site.js",

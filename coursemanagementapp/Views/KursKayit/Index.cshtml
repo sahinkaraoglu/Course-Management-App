@@ -24,8 +24,7 @@
             <td>@Html.DisplayFor(modelItem =>item.Kurs.Ders)</td>
             <td>@Html.DisplayFor(modelItem =>item.Ogretmen.AdSoyad)</td>
             <td>
-                <a asp-action="Edit" asp-route-id="@item.KayitId" class="btn btn-sm btn-primary">Düzenle</a>
-                <a asp-action="Delete" asp-route-id="@item.KayitId" class="btn btn-sm btn-danger">Sil</a>
+                <a asp-action="Delete" style="width: 100px;" asp-route-id="@item.KayitId" class="btn btn-sm btn-danger">Sil</a>
             </td>
         </tr>
     }
