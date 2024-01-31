@@ -11,8 +11,8 @@ using coursemanagementapp.Data;
 namespace coursemanagementapp.Migrations
 {
     [DbContext(typeof(DataContext))]
-    [Migration("20240109112322_InitialCreate")]
-    partial class InitialCreate
+    [Migration("20240130165531_FirsMigration")]
+    partial class FirsMigration
     {
         /// <inheritdoc />
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
@@ -54,11 +54,16 @@ namespace coursemanagementapp.Migrations
                     b.Property<int>("OgrenciId")
                         .HasColumnType("INTEGER");
 
+                    b.Property<int>("OgretmenId")
+                        .HasColumnType("INTEGER");
+
                     b.HasKey("KayitId");
 
                     b.HasIndex("KursId");
 
                     b.HasIndex("OgrenciId");
+
+                    b.HasIndex("OgretmenId");
 
                     b.ToTable("KursKayitlari");
                 });
@@ -137,9 +142,17 @@ namespace coursemanagementapp.Migrations
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
 
+                    b.HasOne("coursemanagementapp.Data.Ogretmen", "Ogretmen")
+                        .WithMany("KursKayitlari")
+                        .HasForeignKey("OgretmenId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
                     b.Navigation("Kurs");
 
                     b.Navigation("Ogrenci");
+
+                    b.Navigation("Ogretmen");
                 });
 
             modelBuilder.Entity("coursemanagementapp.Data.Kurs", b =>
@@ -154,6 +167,8 @@ namespace coursemanagementapp.Migrations
 
             modelBuilder.Entity("coursemanagementapp.Data.Ogretmen", b =>
                 {
+                    b.Navigation("KursKayitlari");
+
                     b.Navigation("Kurslar");
                 });
 #pragma warning restore 612, 618

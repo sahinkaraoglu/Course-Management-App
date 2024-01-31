@@ -1,10 +1,13 @@
 using coursemanagementapp.Data;
+using coursemanagementapp.Models;
 using Microsoft.EntityFrameworkCore;
 
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
 builder.Services.AddControllersWithViews();
+
+builder.Services.AddAutoMapper(typeof(MappingProfile).Assembly);
 
 builder.Services.AddDbContext<DataContext>(options =>{
     var config = builder.Configuration;

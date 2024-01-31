@@ -8,7 +8,7 @@ namespace coursemanagementapp.Data
         public int OgretmenId { get; set; }
         public string? Ad { get; set; }
         public string? Soyad { get; set; }
-
+  
         public string? AdSoyad
         {
             get
@@ -23,6 +23,8 @@ namespace coursemanagementapp.Data
         [DisplayFormat(DataFormatString = "{0:dd-MM-yyyy}", ApplyFormatInEditMode = false)]
         public DateTime BaslamaTarihi { get; set; }
         public ICollection<Kurs> Kurslar { get; set; } = new List<Kurs>();
+        public ICollection<KursKayit> KursKayitlari { get; set; } = new List<KursKayit> { };
+
     }
 }
 

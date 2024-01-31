@@ -10,6 +10,13 @@
     </div>
 
     <div class="mb-3">
+        <label asp-for="OgretmenId" class="form-label">Öğretmen</label>
+        <select asp-for="OgretmenId" asp-items="ViewBag.Ogretmenler" class="form-control">
+            <option value="">Seçiniz</option>
+        </select>
+    </div> 
+
+    <div class="mb-3">
         <label asp-for="KursId" class="form-label">Kurs</label>
         <select asp-for="KursId" asp-items="ViewBag.Kurslar" class="form-select">
             <option value="">Seçiniz</option>

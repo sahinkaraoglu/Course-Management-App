@@ -6,7 +6,7 @@ using Microsoft.EntityFrameworkCore.Migrations;
 namespace coursemanagementapp.Migrations
 {
     /// <inheritdoc />
-    public partial class InitialCreate : Migration
+    public partial class FirsMigration : Migration
     {
         /// <inheritdoc />
         protected override void Up(MigrationBuilder migrationBuilder)
@@ -71,6 +71,7 @@ namespace coursemanagementapp.Migrations
                     KayitId = table.Column<int>(type: "INTEGER", nullable: false)
                         .Annotation("Sqlite:Autoincrement", true),
                     OgrenciId = table.Column<int>(type: "INTEGER", nullable: false),
+                    OgretmenId = table.Column<int>(type: "INTEGER", nullable: false),
                     KursId = table.Column<int>(type: "INTEGER", nullable: false),
                     KayitTarihi = table.Column<DateTime>(type: "TEXT", nullable: false)
                 },
@@ -89,6 +90,12 @@ namespace coursemanagementapp.Migrations
                         principalTable: "Ogrenciler",
                         principalColumn: "OgrenciId",
                         onDelete: ReferentialAction.Cascade);
+                    table.ForeignKey(
+                        name: "FK_KursKayitlari_Ogretmenler_OgretmenId",
+                        column: x => x.OgretmenId,
+                        principalTable: "Ogretmenler",
+                        principalColumn: "OgretmenId",
+                        onDelete: ReferentialAction.Cascade);
                 });
 
             migrationBuilder.CreateIndex(
@@ -100,6 +107,11 @@ namespace coursemanagementapp.Migrations
                 name: "IX_KursKayitlari_OgrenciId",
                 table: "KursKayitlari",
                 column: "OgrenciId");
+
+            migrationBuilder.CreateIndex(
+                name: "IX_KursKayitlari_OgretmenId",
+                table: "KursKayitlari",
+                column: "OgretmenId");
 
             migrationBuilder.CreateIndex(
                 name: "IX_Kurslar_OgretmenId",

@@ -202,3 +202,5 @@ C:\Users\karao\Desktop\github\Course-Management-App\coursemanagementapp\obj\Debu
 C:\Users\karao\Desktop\github\Course-Management-App\coursemanagementapp\obj\Debug\net7.0\coursemanagementapp.pdb
 C:\Users\karao\Desktop\github\Course-Management-App\coursemanagementapp\obj\Debug\net7.0\coursemanagementapp.genruntimeconfig.cache
 C:\Users\karao\Desktop\github\Course-Management-App\coursemanagementapp\obj\Debug\net7.0\ref\coursemanagementapp.dll
+C:\Users\karao\Desktop\github\Course-Management-App\coursemanagementapp\bin\Debug\net7.0\AutoMapper.dll
+C:\Users\karao\Desktop\github\Course-Management-App\coursemanagementapp\bin\Debug\net7.0\AutoMapper.Extensions.Microsoft.DependencyInjection.dll
