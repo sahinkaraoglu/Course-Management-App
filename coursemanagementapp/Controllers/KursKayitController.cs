@@ -10,12 +10,10 @@ namespace coursemanagementapp.Controllers
     public class KursKayitController : Controller
     {
         private readonly DataContext _context;
-        private readonly IMapper _mapper;
-        public KursKayitController(DataContext context, IMapper mapper)
+        public KursKayitController(DataContext context)
         {
 
             _context = context;
-            _mapper = mapper;
         }
 
         public async Task<IActionResult> Index()
@@ -27,8 +25,7 @@ namespace coursemanagementapp.Controllers
                         .Include(x => x.Ogretmen)
                         .ToListAsync();
 
-            var mapping = _mapper.Map<List<KursKayitViewModel>>(kursKayitlari);
-            return View(mapping);
+            return View(kursKayitlari);
 
         }
 
@@ -53,6 +50,34 @@ namespace coursemanagementapp.Controllers
             return RedirectToAction("Index");
         }
 
+        [HttpGet]
+        public async Task<ActionResult> Delete(int? id)
+        {
+            if (id == null)
+            {
+                return NotFound();
+            }
+
+            var Kurskayit = await _context.KursKayitlari.FindAsync(id);
+            if (Kurskayit == null)
+            {
+                return NotFound();
+            }
+            return View(Kurskayit);
+        }
+
+        [HttpPost]
+        public async Task<IActionResult> Delete([FromForm] int id)
+        {
+            var kurskayit = await _context.KursKayitlari.FindAsync(id);
+            if (kurskayit == null)
+            {
+                return NotFound();
+            }
+            _context.KursKayitlari.Remove(kurskayit);
+            await _context.SaveChangesAsync();
+            return RedirectToAction("Index");
+        }
 
 
 

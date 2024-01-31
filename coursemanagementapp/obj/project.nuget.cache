@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "84MQlK1M97cOKtEZJL5UMmjO1HS9HhIhokpNiV7j/FixEtt/dySJOkrIacYRu/909z8PkRCoPKtucrbmDQOwvw==",
+  "dgSpecHash": "Iz2xyAAT6pgLlaKfP1vlkQF9lrui7hyKYmuk8xVuqBgsiJnb+pj6lGBMEhkdkhnPeF2FjXftvUxzYome0kHDww==",
   "success": true,
-  "projectFilePath": "C:\\Users\\karao\\Desktop\\github\\Course-Management-App\\coursemanagementapp\\coursemanagementapp.csproj",
+  "projectFilePath": "C:\\Users\\karao\\Desktop\\github\\new\\Course-Management-App\\coursemanagementapp\\coursemanagementapp.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\karao\\.nuget\\packages\\automapper\\12.0.1\\automapper.12.0.1.nupkg.sha512",
     "C:\\Users\\karao\\.nuget\\packages\\automapper.extensions.microsoft.dependencyinjection\\12.0.1\\automapper.extensions.microsoft.dependencyinjection.12.0.1.nupkg.sha512",

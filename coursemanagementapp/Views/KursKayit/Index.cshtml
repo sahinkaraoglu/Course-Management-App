@@ -1,4 +1,4 @@
-@model IEnumerable<KursKayitViewModel>
+@model IEnumerable<KursKayit>
 
 
 <h2>Kayıt Listesi</h2>
@@ -11,7 +11,7 @@
         <th style="width: 150px;">@Html.DisplayNameFor(m => m.KayitId)</th>
         <th>@Html.DisplayNameFor(m => m.Ogrenci.AdSoyad)</th>
         <th>@Html.DisplayNameFor(m => m.Kurs.Baslik)</th>
-        <th>@Html.DisplayNameFor(m => m.AdSoyad)</th>
+        <th>@Html.DisplayNameFor(m => m.Ogretmen.AdSoyad)</th>
         <th style="width: 150px;">İşlem</th>
     </tr>
    </thead>
@@ -22,7 +22,7 @@
             <td>@Html.DisplayFor(modelItem =>item.KayitId)</td>
             <td>@Html.DisplayFor(modelItem =>item.Ogrenci.AdSoyad)</td>
             <td>@Html.DisplayFor(modelItem =>item.Kurs.Baslik)</td>
-            <td>@item.AdSoyad</td>
+            <td>@Html.DisplayFor(modelItem =>item.Ogretmen.AdSoyad)</td>
             <td>
                 <a asp-action="Edit" asp-route-id="@item.KayitId" class="btn btn-sm btn-primary">Düzenle</a>
                 <a asp-action="Delete" asp-route-id="@item.KayitId" class="btn btn-sm btn-danger">Sil</a>

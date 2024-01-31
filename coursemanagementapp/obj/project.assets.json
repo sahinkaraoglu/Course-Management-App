@@ -1404,11 +1404,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\karao\\Desktop\\github\\Course-Management-App\\coursemanagementapp\\coursemanagementapp.csproj",
+      "projectUniqueName": "C:\\Users\\karao\\Desktop\\github\\new\\Course-Management-App\\coursemanagementapp\\coursemanagementapp.csproj",
       "projectName": "coursemanagementapp",
-      "projectPath": "C:\\Users\\karao\\Desktop\\github\\Course-Management-App\\coursemanagementapp\\coursemanagementapp.csproj",
+      "projectPath": "C:\\Users\\karao\\Desktop\\github\\new\\Course-Management-App\\coursemanagementapp\\coursemanagementapp.csproj",
       "packagesPath": "C:\\Users\\karao\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\karao\\Desktop\\github\\Course-Management-App\\coursemanagementapp\\obj\\",
+      "outputPath": "C:\\Users\\karao\\Desktop\\github\\new\\Course-Management-App\\coursemanagementapp\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
