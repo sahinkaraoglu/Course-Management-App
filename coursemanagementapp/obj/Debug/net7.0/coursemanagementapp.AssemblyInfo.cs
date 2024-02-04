@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("coursemanagementapp")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+e21e629d85740abd2ecba0d21328a81fee5d2471")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+ed765209351f998cb08418c327c58e178799527f")]
 [assembly: System.Reflection.AssemblyProductAttribute("coursemanagementapp")]
 [assembly: System.Reflection.AssemblyTitleAttribute("coursemanagementapp")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

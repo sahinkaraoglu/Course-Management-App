@@ -1,0 +1,26 @@
+<!-- Views/Login/Index.cshtml -->
+@model LoginModel
+@{
+    ViewData["Title"] = "Login";
+}
+
+<h2>@ViewData["Title"]</h2>
+
+<form asp-controller="Login" asp-action="Login" method="post">
+    <div>
+        <label asp-for="Username"></label>
+        <input asp-for="Username" class="form-control"  />
+        <span asp-validation-for="Username"></span>
+    </div>
+    <div>
+        <label asp-for="Password"></label>
+        <input asp-for="Password" class="form-control"  />
+        <span asp-validation-for="Password"></span>
+    </div>
+    <div>
+        <button type="submit">Giriş Yap</button>
+    </div>
+</form>
+
+
+
